@@ -33,6 +33,7 @@ then you can just pass the array and this Transformation functional interface in
     End Sub
 
     Public Function ApplyTransformationToAll(GivenArray As Variant, TransformerFunction As ITransformer)
+        
         Dim FirstColumnIndex  As Long
         FirstColumnIndex = LBound(GivenArray, 2)
         Dim FirstRowIndex As Long
@@ -46,5 +47,7 @@ then you can just pass the array and this Transformation functional interface in
                 GivenArray(CurrentRowIndex, CurrentColumnIndex) = TransformerFunction.Apply(ApplyOnText)
             Next CurrentColumnIndex
         Next CurrentRowIndex
-
+        
+        ApplyTransformationToAll = GivenArray
+        
     End Function
