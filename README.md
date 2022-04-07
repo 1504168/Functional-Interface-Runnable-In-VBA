@@ -1,4 +1,4 @@
-# Functional-Interface-Runnable-In-VBA
+# Functional Interface (Runnable)In VBA
 This Repository show you how to implement Runnable in VBA. In other programming language(Java,Javascript,Even in Power Query) you can pass code
 as argument and that code will be used. So Let's say we have a very generic function which do simply like Text Transformation. So you want to take
 the text and a transformer function which you will use on the text and return that. Now you don't want to hardcode the process about the 
